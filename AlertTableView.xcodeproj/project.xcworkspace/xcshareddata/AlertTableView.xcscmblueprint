@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1469A92C3BD2F1C9F7372DCEB8C85C3174537100",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "1469A92C3BD2F1C9F7372DCEB8C85C3174537100" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1469A92C3BD2F1C9F7372DCEB8C85C3174537100" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C07938FB-E646-4FD1-BC86-CB63EA480BDC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1469A92C3BD2F1C9F7372DCEB8C85C3174537100" : "CampWorker\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AlertTableView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Campworker\/Common\/AlertTableView\/AlertTableView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/139.196.19.39\/svn\/wisdomcamp_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1469A92C3BD2F1C9F7372DCEB8C85C3174537100"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/china-shandong\/CampWorker.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1469A92C3BD2F1C9F7372DCEB8C85C3174537100"
+    }
+  ]
+}
