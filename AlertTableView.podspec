@@ -11,19 +11,19 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
 
 
-  s.author             = { "周荣水" => "1013620104@qq.com" }
+  s.author             = { "rongshuizhou" => "1013620104@qq.com" }
    s.platform     = :ios, "7.0"
 
 
   s.source       = { :git => "https://github.com/rongshuizhou/AlertAlertTableView.git", :tag => "0.0.1" }
 
-  s.source_files  = "*/*/.(h.m.xib)"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "AlertTableView/*.(h,m,xib)"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  # s.resources = "AlertTableView/*.xcassets"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
 
    s.requires_arc = true
 
-   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    s.dependency "Masonry", "~> 0.6.3"
 
 end
