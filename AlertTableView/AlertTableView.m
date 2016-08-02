@@ -9,6 +9,7 @@
 #import "AlertTableView.h"
 #import "AlertTableViewCell.h"
 #import <Masonry.h>
+#import "UITableView+Extension.h"
 
 #define WEAK(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 static NSString *const reuseAlertCell = @"AlertTableViewCell";
@@ -230,7 +231,8 @@ static NSString *const reuseAlertCell = @"AlertTableViewCell";
         tempTableView.delegate = self;
         tempTableView.dataSource = self;
         [tempTableView registerNib:[UINib nibWithNibName:reuseAlertCell bundle:nil] forCellReuseIdentifier:reuseAlertCell];
-        tempTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//        tempTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [tempTableView eraseBottomSeparateLines];
         _tableView = tempTableView;
     }
     return _tableView;

@@ -18,6 +18,7 @@
 		13E974001D506D6D0024E46E /* AlertTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E973FF1D506D6D0024E46E /* AlertTableView.m */; };
 		13E974061D5070F80024E46E /* AlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E974051D5070F80024E46E /* AlertTableViewCell.m */; };
 		13E974081D5071120024E46E /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E974071D5071120024E46E /* AlertTableViewCell.xib */; };
+		13E9740B1D5088650024E46E /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9740A1D5088650024E46E /* UITableView+Extension.m */; };
 		5310EC06704700A366766149 /* libPods-AlertTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C89D02496B351DB845A287B5 /* libPods-AlertTableView.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		13E974041D5070F80024E46E /* AlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewCell.h; sourceTree = "<group>"; };
 		13E974051D5070F80024E46E /* AlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewCell.m; sourceTree = "<group>"; };
 		13E974071D5071120024E46E /* AlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertTableViewCell.xib; sourceTree = "<group>"; };
+		13E974091D5088650024E46E /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
+		13E9740A1D5088650024E46E /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		1DFD5FE0A51114C995805AF4 /* Pods-AlertTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTableView/Pods-AlertTableView.release.xcconfig"; sourceTree = "<group>"; };
 		C89D02496B351DB845A287B5 /* libPods-AlertTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlertTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B25010A36E36CD04744F3D /* Pods-AlertTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTableView/Pods-AlertTableView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				13E974041D5070F80024E46E /* AlertTableViewCell.h */,
 				13E974051D5070F80024E46E /* AlertTableViewCell.m */,
 				13E974071D5071120024E46E /* AlertTableViewCell.xib */,
+				13E974091D5088650024E46E /* UITableView+Extension.h */,
+				13E9740A1D5088650024E46E /* UITableView+Extension.m */,
 			);
 			name = AlertViewController;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 				13E973CF1D506C870024E46E /* AppDelegate.m in Sources */,
 				13E974001D506D6D0024E46E /* AlertTableView.m in Sources */,
 				13E973CC1D506C870024E46E /* main.m in Sources */,
+				13E9740B1D5088650024E46E /* UITableView+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
