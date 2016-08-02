@@ -15,6 +15,10 @@
 		13E973DA1D506C870024E46E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E973D81D506C870024E46E /* LaunchScreen.storyboard */; };
 		13E973E51D506C870024E46E /* AlertTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E973E41D506C870024E46E /* AlertTableViewTests.m */; };
 		13E973F01D506C870024E46E /* AlertTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E973EF1D506C870024E46E /* AlertTableViewUITests.m */; };
+		13E974001D506D6D0024E46E /* AlertTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E973FF1D506D6D0024E46E /* AlertTableView.m */; };
+		13E974061D5070F80024E46E /* AlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E974051D5070F80024E46E /* AlertTableViewCell.m */; };
+		13E974081D5071120024E46E /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E974071D5071120024E46E /* AlertTableViewCell.xib */; };
+		5310EC06704700A366766149 /* libPods-AlertTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C89D02496B351DB845A287B5 /* libPods-AlertTableView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		13E973EB1D506C870024E46E /* AlertTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E973EF1D506C870024E46E /* AlertTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewUITests.m; sourceTree = "<group>"; };
 		13E973F11D506C870024E46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13E973FE1D506D6D0024E46E /* AlertTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableView.h; sourceTree = "<group>"; };
+		13E973FF1D506D6D0024E46E /* AlertTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableView.m; sourceTree = "<group>"; };
+		13E974041D5070F80024E46E /* AlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewCell.h; sourceTree = "<group>"; };
+		13E974051D5070F80024E46E /* AlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewCell.m; sourceTree = "<group>"; };
+		13E974071D5071120024E46E /* AlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertTableViewCell.xib; sourceTree = "<group>"; };
+		1DFD5FE0A51114C995805AF4 /* Pods-AlertTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTableView/Pods-AlertTableView.release.xcconfig"; sourceTree = "<group>"; };
+		C89D02496B351DB845A287B5 /* libPods-AlertTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlertTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B25010A36E36CD04744F3D /* Pods-AlertTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTableView/Pods-AlertTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5310EC06704700A366766149 /* libPods-AlertTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10AB1A78A21CDA1D0D92BAF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C89D02496B351DB845A287B5 /* libPods-AlertTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		13E973BE1D506C870024E46E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +106,8 @@
 				13E973E31D506C870024E46E /* AlertTableViewTests */,
 				13E973EE1D506C870024E46E /* AlertTableViewUITests */,
 				13E973C81D506C870024E46E /* Products */,
+				3671028454FC768A01E99C6B /* Pods */,
+				10AB1A78A21CDA1D0D92BAF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +124,7 @@
 		13E973C91D506C870024E46E /* AlertTableView */ = {
 			isa = PBXGroup;
 			children = (
+				13E973FD1D506D2D0024E46E /* AlertViewController */,
 				13E973CD1D506C870024E46E /* AppDelegate.h */,
 				13E973CE1D506C870024E46E /* AppDelegate.m */,
 				13E973D01D506C870024E46E /* ViewController.h */,
@@ -140,6 +164,27 @@
 			path = AlertTableViewUITests;
 			sourceTree = "<group>";
 		};
+		13E973FD1D506D2D0024E46E /* AlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				13E973FE1D506D6D0024E46E /* AlertTableView.h */,
+				13E973FF1D506D6D0024E46E /* AlertTableView.m */,
+				13E974041D5070F80024E46E /* AlertTableViewCell.h */,
+				13E974051D5070F80024E46E /* AlertTableViewCell.m */,
+				13E974071D5071120024E46E /* AlertTableViewCell.xib */,
+			);
+			name = AlertViewController;
+			sourceTree = "<group>";
+		};
+		3671028454FC768A01E99C6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8B25010A36E36CD04744F3D /* Pods-AlertTableView.debug.xcconfig */,
+				1DFD5FE0A51114C995805AF4 /* Pods-AlertTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13E973F41D506C870024E46E /* Build configuration list for PBXNativeTarget "AlertTableView" */;
 			buildPhases = (
+				30DE3A8CB3155397A8452CD3 /* 📦 Check Pods Manifest.lock */,
 				13E973C31D506C870024E46E /* Sources */,
 				13E973C41D506C870024E46E /* Frameworks */,
 				13E973C51D506C870024E46E /* Resources */,
+				1AA911A39EC13E4AF1B74E4F /* 📦 Embed Pods Frameworks */,
+				82A3CD42C0BA9532B3F867F4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +293,7 @@
 			files = (
 				13E973DA1D506C870024E46E /* LaunchScreen.storyboard in Resources */,
 				13E973D71D506C870024E46E /* Assets.xcassets in Resources */,
+				13E974081D5071120024E46E /* AlertTableViewCell.xib in Resources */,
 				13E973D51D506C870024E46E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,13 +314,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AA911A39EC13E4AF1B74E4F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlertTableView/Pods-AlertTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30DE3A8CB3155397A8452CD3 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82A3CD42C0BA9532B3F867F4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlertTableView/Pods-AlertTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13E973C31D506C870024E46E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E974061D5070F80024E46E /* AlertTableViewCell.m in Sources */,
 				13E973D21D506C870024E46E /* ViewController.m in Sources */,
 				13E973CF1D506C870024E46E /* AppDelegate.m in Sources */,
+				13E974001D506D6D0024E46E /* AlertTableView.m in Sources */,
 				13E973CC1D506C870024E46E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,22 +510,26 @@
 		};
 		13E973F51D506C870024E46E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B25010A36E36CD04744F3D /* Pods-AlertTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlertTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RS.AlertTableView.AlertTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tony.AlertTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		13E973F61D506C870024E46E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DFD5FE0A51114C995805AF4 /* Pods-AlertTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlertTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RS.AlertTableView.AlertTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tony.AlertTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -496,6 +599,7 @@
 				13E973F61D506C870024E46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13E973F71D506C870024E46E /* Build configuration list for PBXNativeTarget "AlertTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +608,7 @@
 				13E973F91D506C870024E46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13E973FA1D506C870024E46E /* Build configuration list for PBXNativeTarget "AlertTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +617,7 @@
 				13E973FC1D506C870024E46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

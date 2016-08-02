@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "AlertTableView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+- (IBAction)clickAction:(id)sender;
 
 @end
 
@@ -16,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,4 +28,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickAction:(id)sender {
+    NSLog(@"11111111111111111");
+    AlertTableView *modelView = [[AlertTableView alloc] init];
+    modelView.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    modelView.modalTransitionStyle =  UIModalTransitionStyleCrossDissolve;
+
+    modelView.AlertFromDirect = fromDirectBottom;
+    modelView.rowHight = 60;
+    modelView.AlertArray = @[@"哈哈",@"看看",@"哦哦",@"奥奥",@"1",@"2"];
+    modelView.titleAndIndex = ^(NSString *titleStr,NSInteger index){
+        NSLog(@"%ld",index);
+        self.titleLabel.text = titleStr;
+        
+    };
+    [self presentViewController:modelView animated:YES completion:nil];
+}
 @end
