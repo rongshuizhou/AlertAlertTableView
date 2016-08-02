@@ -8,7 +8,7 @@
 
 #import "AlertTableView.h"
 #import "AlertTableViewCell.h"
-#import <Masonry.h>
+#import "Masonry.h"
 #import "UITableView+Extension.h"
 
 #define WEAK(weakSelf)  __weak __typeof(&*self)weakSelf = self;
