@@ -29,7 +29,6 @@
 }
 
 - (IBAction)clickAction:(id)sender {
-    NSLog(@"11111111111111111");
     AlertTableView *modelView = [[AlertTableView alloc] init];
     modelView.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     modelView.modalTransitionStyle =  UIModalTransitionStyleCrossDissolve;
@@ -40,7 +39,6 @@
     modelView.titleAndIndex = ^(NSString *titleStr,NSInteger index){
         NSLog(@"%ld",index);
         self.titleLabel.text = titleStr;
-        
     };
     [self presentViewController:modelView animated:YES completion:nil];
 }
