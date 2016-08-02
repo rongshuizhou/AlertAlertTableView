@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/rongshuizhou/AlertAlertTableView.git", :tag => "0.0.1" }
 
-  s.source_files  = "AlertTableView/*.(h,m,xib)"
+  s.source_files  = "AlertTableView/*.{h,m,xib}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
