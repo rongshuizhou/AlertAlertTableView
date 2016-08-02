@@ -37,7 +37,7 @@
     modelView.rowHight = 60;
     modelView.AlertArray = @[@"哈哈",@"看看",@"哦哦",@"奥奥",@"1",@"2"];
     modelView.titleAndIndex = ^(NSString *titleStr,NSInteger index){
-        NSLog(@"%ld",index);
+        NSLog(@"%ld",(long)index);
         self.titleLabel.text = titleStr;
     };
     [self presentViewController:modelView animated:YES completion:nil];
